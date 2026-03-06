@@ -5,49 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
     <title>Свадебное приглашение | Даниил & Карина</title>
     
-    <!-- Подключаем шрифты (исправлены пробелы в ссылках) -->
+    <!-- ✅ Шрифты (убраны пробелы в ссылках) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
+        * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             font-family: 'Montserrat', sans-serif;
             background-color: #ffffff;
             color: #2c2c2c;
             line-height: 1.6;
-
-              <!-- ✅ Фото молодожёнов (теперь в правильном месте!) -->
-<div style="width: 100%; height: 300px; border-radius: 12px; margin: 20px 0 30px; overflow: hidden; border: 2px solid #a7c7e7; box-shadow: 0 8px 20px rgba(167, 199, 231, 0.3);">
-    <img src="https://drive.google.com/file/d/1bxcqaiq-60qXRgiF_3P2qy-_1LBLiVgi/view?usp=drive_link" 
-         alt="Даниил и Карина" 
-         style="width: 100%; height: 100%; object-fit: cover; display: block;">
-</div>
         }
-        
         .container {
             max-width: 480px;
             margin: 0 auto;
             padding: 20px;
             background: white;
         }
-        
-        /* Нежно-голубой цвет для декора */
         :root {
             --baby-blue: #a7c7e7;
             --soft-blue: #b0d0e3;
             --pearl-blue: #c0d6e8;
             --dark-text: #2c2c2c;
         }
-        
-        /* Декоративные элементы */
         .divider {
             display: flex;
             align-items: center;
@@ -55,76 +38,59 @@
             gap: 15px;
             margin: 25px 0;
         }
-        
         .divider-line {
             height: 1px;
             width: 60px;
             background: var(--baby-blue);
         }
-        
         .divider-heart {
             color: var(--baby-blue);
             font-size: 1.2rem;
         }
-        
         .heart-icon {
             color: var(--baby-blue);
             margin: 0 5px;
         }
-        
-        /* Типография */
         h1, h2, h3 {
             font-family: 'Cormorant Garamond', serif;
             font-weight: 600;
             text-align: center;
         }
-        
         .main-title {
             font-size: 2rem;
             color: #1a1a1a;
             margin-bottom: 5px;
             letter-spacing: 2px;
         }
-        
         .main-title span {
             display: block;
             font-size: 2.8rem;
             margin-top: 5px;
         }
-        
         .subtitle {
             font-size: 1.5rem;
             margin: 15px 0 5px;
             color: #1a1a1a;
         }
-        
-        /* Календарь */
-        .calendar {
-            margin: 30px 0;
-            text-align: center;
-        }
-        
+        .calendar { margin: 30px 0; text-align: center; }
         .calendar-header {
             display: flex;
             justify-content: space-between;
             margin-bottom: 15px;
             font-weight: 500;
         }
-        
         .calendar-days {
             display: grid;
             grid-template-columns: repeat(7, 1fr);
             gap: 5px;
             margin-bottom: 10px;
         }
-        
         .calendar-weekday {
             font-size: 0.8rem;
             color: #666;
             text-align: center;
             padding: 5px;
         }
-        
         .calendar-date {
             text-align: center;
             padding: 8px 5px;
@@ -133,18 +99,12 @@
             width: 35px;
             margin: 0 auto;
         }
-        
         .calendar-date.highlight {
             background: var(--baby-blue);
             color: white;
             font-weight: 600;
         }
-        
-        /* Сетка расписания */
-        .schedule-grid {
-            margin: 25px 0;
-        }
-        
+        .schedule-grid { margin: 25px 0; }
         .schedule-item {
             display: flex;
             align-items: baseline;
@@ -152,26 +112,21 @@
             margin-bottom: 15px;
             padding: 5px 0;
         }
-        
         .schedule-time {
             font-weight: 600;
             color: var(--baby-blue);
             min-width: 70px;
             font-size: 1.1rem;
         }
-        
         .schedule-desc {
             font-size: 1rem;
             color: #333;
         }
-        
         .schedule-desc i {
             color: var(--baby-blue);
             margin-right: 8px;
             font-size: 0.9rem;
         }
-        
-        /* Текст приглашения */
         .invitation-text {
             text-align: center;
             margin: 25px 0;
@@ -179,27 +134,21 @@
             color: #444;
             line-height: 1.8;
         }
-        
-        /* Цветовая гамма */
         .color-palette {
             display: flex;
             justify-content: center;
             gap: 20px;
             margin: 25px 0;
         }
-        
         .color-dot {
             width: 50px;
             height: 50px;
             border-radius: 50%;
             box-shadow: 0 4px 10px rgba(0,0,0,0.1);
         }
-        
         .color-dot.blue1 { background: #a7c7e7; }
         .color-dot.blue2 { background: #b0d0e3; }
         .color-dot.blue3 { background: #c0d6e8; }
-        
-        /* Кнопка */
         .rsvp-btn {
             display: block;
             background: linear-gradient(135deg, #a7c7e7, #b0d0e3);
@@ -218,28 +167,22 @@
             box-shadow: 0 4px 15px rgba(167, 199, 231, 0.3);
             width: fit-content;
         }
-        
         .rsvp-btn:hover {
             transform: translateY(-2px);
             box-shadow: 0 6px 20px rgba(167, 199, 231, 0.4);
         }
-        
-        /* Footer */
         .footer {
             text-align: center;
             margin-top: 40px;
             padding: 20px 0;
             border-top: 1px solid var(--baby-blue);
         }
-        
         .footer-hearts {
             color: var(--baby-blue);
             font-size: 1.2rem;
             letter-spacing: 5px;
             margin-bottom: 10px;
         }
-        
-        /* Дата в начале */
         .big-date {
             font-family: 'Cormorant Garamond', serif;
             font-size: 2.2rem;
@@ -247,8 +190,6 @@
             text-align: center;
             margin: 20px 0 10px;
         }
-        
-        /* Адаптация */
         @media (max-width: 380px) {
             .main-title { font-size: 1.8rem; }
             .main-title span { font-size: 2.4rem; }
@@ -259,14 +200,12 @@
 <body>
     <div class="container">
         
-        <!-- Декоративная линия с сердечками сверху -->
         <div class="divider">
             <div class="divider-line"></div>
             <div class="divider-heart"><i class="fas fa-heart"></i></div>
             <div class="divider-line"></div>
         </div>
         
-        <!-- Заголовок -->
         <div style="text-align: center; margin: 15px 0;">
             <div style="font-family: 'Cormorant Garamond', serif; font-size: 2rem; font-weight: 700; color: #a7c7e7; letter-spacing: 2px; line-height: 1.2;">
                 НАКОНЕЦ-ТО
@@ -276,42 +215,37 @@
             </div>
         </div>
         
-        <!-- Декоративная линия с сердечками -->
         <div class="divider">
             <div class="divider-line"></div>
             <div class="divider-heart"><i class="fas fa-heart"></i></div>
             <div class="divider-line"></div>
         </div>
 
-        <!-- ✅ Фото молодожёнов (теперь в правильном месте!) -->
-<div style="width: 100%; height: 300px; border-radius: 12px; margin: 20px 0 30px; overflow: hidden; border: 2px solid #a7c7e7; box-shadow: 0 8px 20px rgba(167, 199, 231, 0.3);">
-    <img src="https://drive.google.com/file/d/1bxcqaiq-60qXRgiF_3P2qy-_1LBLiVgi/view?usp=drive_link" 
-         alt="Даниил и Карина" 
-         style="width: 100%; height: 100%; object-fit: cover; display: block;">
-</div>
+        <!-- ✅ ФОТО (исправленная ссылка + запасной вариант) -->
+        <div style="width: 100%; height: 300px; border-radius: 12px; margin: 20px 0 30px; overflow: hidden; border: 2px solid #a7c7e7; box-shadow: 0 8px 20px rgba(167, 199, 231, 0.3);">
+            <img src="https://drive.google.com/uc?export=view&id=1bxcqaiq-60qXRgiF_3P2qy-_1LBLiVgi" 
+                 alt="Даниил и Карина" 
+                 style="width: 100%; height: 100%; object-fit: cover; display: block;"
+                 onerror="this.src='https://via.placeholder.com/480x300/a7c7e7/ffffff?text=Даниил+и+Карина';">
+        </div>
         
-        <!-- Декоративная линия -->
         <div class="divider">
             <div class="divider-line"></div>
             <div class="divider-heart"><i class="fas fa-heart"></i></div>
             <div class="divider-line"></div>
         </div>
         
-        <!-- Пригласительный текст -->
         <div class="invitation-text">
             <p>Дорогие друзья и близкие,</p>
             <p>Мы приглашаем вас разделить с нами наше свадебное торжество,<br>которое состоится</p>
         </div>
         
-        <!-- Крупная дата -->
         <div class="big-date">26.06.2026</div>
         
-        <!-- Календарь -->
         <div class="calendar">
             <div class="calendar-header">
                 <span>ИЮНЬ 2026</span>
             </div>
-            
             <div class="calendar-days">
                 <div class="calendar-weekday">пн</div>
                 <div class="calendar-weekday">вт</div>
@@ -321,60 +255,33 @@
                 <div class="calendar-weekday">сб</div>
                 <div class="calendar-weekday">вс</div>
             </div>
-            
             <div class="calendar-days">
-                <div class="calendar-date">1</div>
-                <div class="calendar-date">2</div>
-                <div class="calendar-date">3</div>
-                <div class="calendar-date">4</div>
-                <div class="calendar-date">5</div>
-                <div class="calendar-date">6</div>
-                <div class="calendar-date">7</div>
-                <div class="calendar-date">8</div>
-                <div class="calendar-date">9</div>
-                <div class="calendar-date">10</div>
-                <div class="calendar-date">11</div>
-                <div class="calendar-date">12</div>
-                <div class="calendar-date">13</div>
-                <div class="calendar-date">14</div>
-                <div class="calendar-date">15</div>
-                <div class="calendar-date">16</div>
-                <div class="calendar-date">17</div>
-                <div class="calendar-date">18</div>
-                <div class="calendar-date">19</div>
-                <div class="calendar-date">20</div>
-                <div class="calendar-date">21</div>
-                <div class="calendar-date">22</div>
-                <div class="calendar-date">23</div>
-                <div class="calendar-date">24</div>
-                <div class="calendar-date">25</div>
-                <div class="calendar-date highlight">26</div>
-                <div class="calendar-date">27</div>
-                <div class="calendar-date">28</div>
-                <div class="calendar-date">29</div>
-                <div class="calendar-date">30</div>
-                <div class="calendar-date">1</div>
-                <div class="calendar-date">2</div>
-                <div class="calendar-date">3</div>
-                <div class="calendar-date">4</div>
-                <div class="calendar-date">5</div>
+                <div class="calendar-date">1</div><div class="calendar-date">2</div><div class="calendar-date">3</div>
+                <div class="calendar-date">4</div><div class="calendar-date">5</div><div class="calendar-date">6</div>
+                <div class="calendar-date">7</div><div class="calendar-date">8</div><div class="calendar-date">9</div>
+                <div class="calendar-date">10</div><div class="calendar-date">11</div><div class="calendar-date">12</div>
+                <div class="calendar-date">13</div><div class="calendar-date">14</div><div class="calendar-date">15</div>
+                <div class="calendar-date">16</div><div class="calendar-date">17</div><div class="calendar-date">18</div>
+                <div class="calendar-date">19</div><div class="calendar-date">20</div><div class="calendar-date">21</div>
+                <div class="calendar-date">22</div><div class="calendar-date">23</div><div class="calendar-date">24</div>
+                <div class="calendar-date">25</div><div class="calendar-date highlight">26</div><div class="calendar-date">27</div>
+                <div class="calendar-date">28</div><div class="calendar-date">29</div><div class="calendar-date">30</div>
+                <div class="calendar-date">1</div><div class="calendar-date">2</div><div class="calendar-date">3</div>
+                <div class="calendar-date">4</div><div class="calendar-date">5</div>
             </div>
         </div>
         
-        <!-- Декоративная линия -->
         <div class="divider">
             <div class="divider-line"></div>
             <div class="divider-heart"><i class="fas fa-heart"></i></div>
             <div class="divider-line"></div>
         </div>
 
-        <!-- Детали мероприятия -->
         <section style="padding-top: 0; margin: 30px 0;">
             <h2 style="font-family: 'Cormorant Garamond', serif; font-size: 1.8rem; text-align: center; color: #1a1a1a; margin-bottom: 20px;">
                 Программа дня
             </h2>
             
-            <!-- Карточка церемонии -->
             <div style="background: white; border-radius: 12px; padding: 20px; margin: 15px 0; box-shadow: 0 5px 15px rgba(167, 199, 231, 0.2); border: 1px solid rgba(167, 199, 231, 0.3);">
                 <div style="display: flex; align-items: center; gap: 15px;">
                     <div style="font-size: 2rem; color: #a7c7e7; min-width: 50px; text-align: center;">
@@ -390,7 +297,6 @@
                 </div>
             </div>
             
-            <!-- Карточка банкета -->
             <div style="background: white; border-radius: 12px; padding: 20px; margin: 15px 0; box-shadow: 0 5px 15px rgba(167, 199, 231, 0.2); border: 1px solid rgba(167, 199, 231, 0.3);">
                 <div style="display: flex; align-items: center; gap: 15px;">
                     <div style="font-size: 2rem; color: #a7c7e7; min-width: 50px; text-align: center;">
@@ -406,7 +312,6 @@
                 </div>
             </div>
             
-            <!-- Карточка фотосессии -->
             <div style="background: white; border-radius: 12px; padding: 20px; margin: 15px 0; box-shadow: 0 5px 15px rgba(167, 199, 231, 0.2); border: 1px solid rgba(167, 199, 231, 0.3);">
                 <div style="display: flex; align-items: center; gap: 15px;">
                     <div style="font-size: 2rem; color: #a7c7e7; min-width: 50px; text-align: center;">
@@ -423,14 +328,12 @@
             </div>
         </section>
 
-        <!-- Декоративная линия -->
         <div class="divider">
             <div class="divider-line"></div>
             <div class="divider-heart"><i class="fas fa-heart"></i></div>
             <div class="divider-line"></div>
         </div>
         
-        <!-- Дресс-код -->
         <h3 class="subtitle">Дресс-код</h3>
         <p style="text-align: center; margin-bottom: 15px; font-style: italic; color: #555;">
             Мы стараемся сделать праздник красивым и стильным и будем рады,<br>
@@ -442,43 +345,34 @@
             <div class="color-dot blue2"></div>
             <div class="color-dot blue3"></div>
         </div>
-        
         <p style="text-align: center; color: #666; font-size: 0.9rem;">
             Нежно-голубой, мятный, жемчужный
         </p>
         
-        <!-- Декоративная линия -->
         <div class="divider">
             <div class="divider-line"></div>
             <div class="divider-heart"><i class="fas fa-heart"></i></div>
             <div class="divider-line"></div>
         </div>
         
-        <!-- Пожелания подарков -->
         <section style="padding-top: 0; margin: 30px 0;">
             <h2 style="font-family: 'Cormorant Garamond', serif; font-size: 1.8rem; text-align: center; color: #1a1a1a; margin-bottom: 20px;">
                 Подарки
             </h2>
-            
             <div style="background: white; border-radius: 12px; padding: 30px 20px; margin: 20px 0; box-shadow: 0 5px 15px rgba(167, 199, 231, 0.2); border: 1px solid rgba(167, 199, 231, 0.3); text-align: center;">
-                
                 <i class="fas fa-gift" style="font-size: 2.8rem; color: #a7c7e7; margin-bottom: 20px;"></i>
-                
                 <p style="font-size: 1.1rem; color: #444; margin-bottom: 15px; font-family: 'Cormorant Garamond', serif;">
                     Для нас главный подарок — ваше присутствие!
                 </p>
-                
                 <div style="display: flex; align-items: center; justify-content: center; gap: 10px; margin: 20px 0;">
                     <div style="height: 1px; width: 50px; background: #a7c7e7;"></div>
                     <i class="fas fa-heart" style="color: #a7c7e7; font-size: 0.9rem;"></i>
                     <div style="height: 1px; width: 50px; background: #a7c7e7;"></div>
                 </div>
-                
                 <p style="font-style: italic; color: #a7c7e7; font-weight: 500; font-size: 1rem; background: rgba(167, 199, 231, 0.1); padding: 15px; border-radius: 50px;">
                     <i class="fas fa-ticket-alt" style="margin-right: 8px;"></i>
                     Если вы хотите сделать нам комплимент, замените букет на лотерейный билет
                 </p>
-                
                 <p style="margin-top: 20px; font-size: 0.9rem; color: #888;">
                     <i class="fas fa-smile" style="color: #a7c7e7; margin-right: 5px;"></i>
                     Будем рады каждому из вас!
@@ -486,24 +380,19 @@
             </div>
         </section>
         
-        <!-- RSVP секция -->
         <section style="padding-top: 0; margin: 40px 0; text-align: center;">
-            
             <h2 style="font-family: 'Cormorant Garamond', serif; font-size: 1.8rem; color: #1a1a1a; margin-bottom: 10px;">
                 Подтверждение участия
             </h2>
-            
             <p style="font-size: 1rem; color: #666; margin-bottom: 30px; font-style: italic;">
                 Пожалуйста, сообщите нам о своём решении до 1 июня 2026 года
             </p>
-            
             <div class="divider" style="margin-bottom: 25px;">
                 <div style="height: 1px; width: 60px; background: #a7c7e7;"></div>
                 <i class="fas fa-heart" style="color: #a7c7e7; font-size: 1rem;"></i>
                 <div style="height: 1px; width: 60px; background: #a7c7e7;"></div>
             </div>
             
-            <!-- Кнопка подтверждения (исправлена ссылка) -->
             <a href="https://docs.google.com/forms/d/e/1FAIpQLSfkj-UEcBWCw_zTgg5KW7iAFsAIacFLLG14Iy7bdxJNgz4QKA/viewform?usp=dialog" 
                target="_blank" 
                style="display: inline-block;
@@ -529,13 +418,11 @@
                 <i class="fas fa-external-link-alt" style="margin-right: 5px; color: #a7c7e7; opacity: 0.7;"></i>
                 Вы перейдёте в Google Форму (займёт 1 минуту)
             </p>
-            
             <div style="margin-top: 20px;">
                 <i class="fas fa-circle" style="color: #a7c7e7; font-size: 0.4rem; opacity: 0.5;"></i>
             </div>
         </section>
         
-        <!-- Footer с сердечками -->
         <div class="footer">
             <div class="footer-hearts">
                 <i class="fas fa-heart"></i> <i class="fas fa-heart"></i> <i class="fas fa-heart"></i>
