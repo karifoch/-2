@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
     <title>Свадебное приглашение | Даниил & Карина</title>
     
-    <!-- Подключаем шрифты -->
+    <!-- Подключаем шрифты (исправлены пробелы в ссылках) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
@@ -65,14 +65,6 @@
             margin: 0 5px;
         }
         
-       <!-- Фото молодожёнов -->
-<div style="width: 100%; height: 300px; border-radius: 12px; margin: 20px 0 30px; overflow: hidden; border: 2px solid #a7c7e7; box-shadow: 0 8px 20px rgba(167, 199, 231, 0.3);">
-    <img src="https://drive.google.com/uc?export=view&id=1bxcqaiq-60qXRgiF_3P2qy-_1LBLiVgi" 
-         alt="Даниил и Карина" 
-         style="width: 100%; height: 100%; object-fit: cover; display: block;"
-         onerror="this.src='https://via.placeholder.com/480x300/a7c7e7/ffffff?text=Фото+загрузится+чуть+позже';">
-</div>
-        
         /* Типография */
         h1, h2, h3 {
             font-family: 'Cormorant Garamond', serif;
@@ -82,7 +74,7 @@
         
         .main-title {
             font-size: 2rem;
-            color: #1a1a1a; /* Темнее, чем голубые элементы */
+            color: #1a1a1a;
             margin-bottom: 5px;
             letter-spacing: 2px;
         }
@@ -267,15 +259,15 @@
             <div class="divider-line"></div>
         </div>
         
-        <!-- Заголовок "наконец-то МЫ ЖЕНИМСЯ" синим цветом -->
-<div style="text-align: center; margin: 15px 0;">
-    <div style="font-family: 'Cormorant Garamond', serif; font-size: 2rem; font-weight: 700; color: #a7c7e7; letter-spacing: 2px; line-height: 1.2;">
-        НАКОНЕЦ-ТО
-    </div>
-    <div style="font-family: 'Cormorant Garamond', serif; font-size: 3.2rem; font-weight: 800; color: #a7c7e7; margin-top: -5px; letter-spacing: 4px;">
-        МЫ ЖЕНИМСЯ
-    </div>
-</div>
+        <!-- Заголовок -->
+        <div style="text-align: center; margin: 15px 0;">
+            <div style="font-family: 'Cormorant Garamond', serif; font-size: 2rem; font-weight: 700; color: #a7c7e7; letter-spacing: 2px; line-height: 1.2;">
+                НАКОНЕЦ-ТО
+            </div>
+            <div style="font-family: 'Cormorant Garamond', serif; font-size: 3.2rem; font-weight: 800; color: #a7c7e7; margin-top: -5px; letter-spacing: 4px;">
+                МЫ ЖЕНИМСЯ
+            </div>
+        </div>
         
         <!-- Декоративная линия с сердечками -->
         <div class="divider">
@@ -284,9 +276,13 @@
             <div class="divider-line"></div>
         </div>
         
-        <!-- Место для фотографии -->
-        <div class="photo-placeholder"></div>
-        
+        <!-- ✅ ФОТО МОЛОДОЖЁНОВ (перенесено из <style> в <body>) -->
+        <div style="width: 100%; height: 300px; border-radius: 12px; margin: 20px 0 30px; overflow: hidden; border: 2px solid #a7c7e7; box-shadow: 0 8px 20px rgba(167, 199, 231, 0.3);">
+            <img src="https://drive.google.com/uc?export=view&id=1bxcqaiq-60qXRgiF_3P2qy-_1LBLiVgi" 
+                 alt="Даниил и Карина" 
+                 style="width: 100%; height: 100%; object-fit: cover; display: block;"
+                 onerror="this.src='https://via.placeholder.com/480x300/a7c7e7/ffffff?text=Фото+загрузится+чуть+позже';">
+        </div>
         
         <!-- Декоративная линия -->
         <div class="divider">
@@ -366,62 +362,62 @@
             <div class="divider-line"></div>
         </div>
 
-<!-- Детали мероприятия -->
-<section style="padding-top: 0; margin: 30px 0;">
-    <h2 style="font-family: 'Cormorant Garamond', serif; font-size: 1.8rem; text-align: center; color: #1a1a1a; margin-bottom: 20px;">
-        Программа дня
-    </h2>
-    
-    <!-- Карточка церемонии -->
-    <div style="background: white; border-radius: 12px; padding: 20px; margin: 15px 0; box-shadow: 0 5px 15px rgba(167, 199, 231, 0.2); border: 1px solid rgba(167, 199, 231, 0.3);">
-        <div style="display: flex; align-items: center; gap: 15px;">
-            <div style="font-size: 2rem; color: #a7c7e7; min-width: 50px; text-align: center;">
-                <i class="fas fa-ring"></i>
-            </div>
-            <div>
-                <div style="font-family: 'Cormorant Garamond', serif; font-size: 1.5rem; font-weight: 600; color: #1a1a1a;">Церемония</div>
-                <div style="color: #666; font-size: 0.95rem;">
-                    <span style="font-weight: 600; color: #a7c7e7;">14:15</span> - ЗАГС<br>
-                    Пролетарская ул., 110Б
+        <!-- Детали мероприятия -->
+        <section style="padding-top: 0; margin: 30px 0;">
+            <h2 style="font-family: 'Cormorant Garamond', serif; font-size: 1.8rem; text-align: center; color: #1a1a1a; margin-bottom: 20px;">
+                Программа дня
+            </h2>
+            
+            <!-- Карточка церемонии -->
+            <div style="background: white; border-radius: 12px; padding: 20px; margin: 15px 0; box-shadow: 0 5px 15px rgba(167, 199, 231, 0.2); border: 1px solid rgba(167, 199, 231, 0.3);">
+                <div style="display: flex; align-items: center; gap: 15px;">
+                    <div style="font-size: 2rem; color: #a7c7e7; min-width: 50px; text-align: center;">
+                        <i class="fas fa-ring"></i>
+                    </div>
+                    <div>
+                        <div style="font-family: 'Cormorant Garamond', serif; font-size: 1.5rem; font-weight: 600; color: #1a1a1a;">Церемония</div>
+                        <div style="color: #666; font-size: 0.95rem;">
+                            <span style="font-weight: 600; color: #a7c7e7;">14:15</span> - ЗАГС<br>
+                            Пролетарская ул., 110Б
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
-    
-    <!-- Карточка банкета -->
-    <div style="background: white; border-radius: 12px; padding: 20px; margin: 15px 0; box-shadow: 0 5px 15px rgba(167, 199, 231, 0.2); border: 1px solid rgba(167, 199, 231, 0.3);">
-        <div style="display: flex; align-items: center; gap: 15px;">
-            <div style="font-size: 2rem; color: #a7c7e7; min-width: 50px; text-align: center;">
-                <i class="fas fa-glass-cheers"></i>
-            </div>
-            <div>
-                <div style="font-family: 'Cormorant Garamond', serif; font-size: 1.5rem; font-weight: 600; color: #1a1a1a;">Банкет</div>
-                <div style="color: #666; font-size: 0.95rem;">
-                    <span style="font-weight: 600; color: #a7c7e7;">16:00</span> - Forest<br>
-                    ул. Малиновского, 50С
+            
+            <!-- Карточка банкета -->
+            <div style="background: white; border-radius: 12px; padding: 20px; margin: 15px 0; box-shadow: 0 5px 15px rgba(167, 199, 231, 0.2); border: 1px solid rgba(167, 199, 231, 0.3);">
+                <div style="display: flex; align-items: center; gap: 15px;">
+                    <div style="font-size: 2rem; color: #a7c7e7; min-width: 50px; text-align: center;">
+                        <i class="fas fa-glass-cheers"></i>
+                    </div>
+                    <div>
+                        <div style="font-family: 'Cormorant Garamond', serif; font-size: 1.5rem; font-weight: 600; color: #1a1a1a;">Банкет</div>
+                        <div style="color: #666; font-size: 0.95rem;">
+                            <span style="font-weight: 600; color: #a7c7e7;">16:00</span> - Forest<br>
+                            ул. Малиновского, 50С
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
-    
-    <!-- Карточка фотосессии -->
-    <div style="background: white; border-radius: 12px; padding: 20px; margin: 15px 0; box-shadow: 0 5px 15px rgba(167, 199, 231, 0.2); border: 1px solid rgba(167, 199, 231, 0.3);">
-        <div style="display: flex; align-items: center; gap: 15px;">
-            <div style="font-size: 2rem; color: #a7c7e7; min-width: 50px; text-align: center;">
-                <i class="fas fa-camera"></i>
-            </div>
-            <div>
-                <div style="font-family: 'Cormorant Garamond', serif; font-size: 1.5rem; font-weight: 600; color: #1a1a1a;">Фотосессия</div>
-                <div style="color: #666; font-size: 0.95rem;">
-                    В перерывах между тостами<br>
-                    <span style="font-style: italic;">Приготовьте улыбки!</span>
+            
+            <!-- Карточка фотосессии -->
+            <div style="background: white; border-radius: 12px; padding: 20px; margin: 15px 0; box-shadow: 0 5px 15px rgba(167, 199, 231, 0.2); border: 1px solid rgba(167, 199, 231, 0.3);">
+                <div style="display: flex; align-items: center; gap: 15px;">
+                    <div style="font-size: 2rem; color: #a7c7e7; min-width: 50px; text-align: center;">
+                        <i class="fas fa-camera"></i>
+                    </div>
+                    <div>
+                        <div style="font-family: 'Cormorant Garamond', serif; font-size: 1.5rem; font-weight: 600; color: #1a1a1a;">Фотосессия</div>
+                        <div style="color: #666; font-size: 0.95rem;">
+                            В перерывах между тостами<br>
+                            <span style="font-style: italic;">Приготовьте улыбки!</span>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
-</section>
+        </section>
 
-         <!-- Декоративная линия -->
+        <!-- Декоративная линия -->
         <div class="divider">
             <div class="divider-line"></div>
             <div class="divider-heart"><i class="fas fa-heart"></i></div>
@@ -453,94 +449,85 @@
         </div>
         
         <!-- Пожелания подарков -->
-<section style="padding-top: 0; margin: 30px 0;">
-    <h2 style="font-family: 'Cormorant Garamond', serif; font-size: 1.8rem; text-align: center; color: #1a1a1a; margin-bottom: 20px;">
-        Подарки
-    </h2>
-    
-    <div style="background: white; border-radius: 12px; padding: 30px 20px; margin: 20px 0; box-shadow: 0 5px 15px rgba(167, 199, 231, 0.2); border: 1px solid rgba(167, 199, 231, 0.3); text-align: center;">
-        
-        <!-- Иконка подарка (теперь голубая) -->
-        <i class="fas fa-gift" style="font-size: 2.8rem; color: #a7c7e7; margin-bottom: 20px;"></i>
-        
-        <!-- Первая фраза из старого кода -->
-        <p style="font-size: 1.1rem; color: #444; margin-bottom: 15px; font-family: 'Cormorant Garamond', serif;">
-            Для нас главный подарок — ваше присутствие!
-        </p>
-        
-        <!-- Декоративная линия с сердечком -->
-        <div style="display: flex; align-items: center; justify-content: center; gap: 10px; margin: 20px 0;">
-            <div style="height: 1px; width: 50px; background: #a7c7e7;"></div>
-            <i class="fas fa-heart" style="color: #a7c7e7; font-size: 0.9rem;"></i>
-            <div style="height: 1px; width: 50px; background: #a7c7e7;"></div>
-        </div>
-        
-        <!-- Вторая фраза с лотерейным билетом (полностью сохранена) -->
-        <p style="font-style: italic; color: #a7c7e7; font-weight: 500; font-size: 1rem; background: rgba(167, 199, 231, 0.1); padding: 15px; border-radius: 50px;">
-            <i class="fas fa-ticket-alt" style="margin-right: 8px;"></i>
-            Если вы хотите сделать нам комплимент, замените букет на лотерейный билет
-        </p>
-        
-        <!-- Маленькое дополнение для теплоты -->
-        <p style="margin-top: 20px; font-size: 0.9rem; color: #888;">
-            <i class="fas fa-smile" style="color: #a7c7e7; margin-right: 5px;"></i>
-            Будем рады каждому из вас!
-        </p>
-    </div>
-</section>
+        <section style="padding-top: 0; margin: 30px 0;">
+            <h2 style="font-family: 'Cormorant Garamond', serif; font-size: 1.8rem; text-align: center; color: #1a1a1a; margin-bottom: 20px;">
+                Подарки
+            </h2>
+            
+            <div style="background: white; border-radius: 12px; padding: 30px 20px; margin: 20px 0; box-shadow: 0 5px 15px rgba(167, 199, 231, 0.2); border: 1px solid rgba(167, 199, 231, 0.3); text-align: center;">
+                
+                <i class="fas fa-gift" style="font-size: 2.8rem; color: #a7c7e7; margin-bottom: 20px;"></i>
+                
+                <p style="font-size: 1.1rem; color: #444; margin-bottom: 15px; font-family: 'Cormorant Garamond', serif;">
+                    Для нас главный подарок — ваше присутствие!
+                </p>
+                
+                <div style="display: flex; align-items: center; justify-content: center; gap: 10px; margin: 20px 0;">
+                    <div style="height: 1px; width: 50px; background: #a7c7e7;"></div>
+                    <i class="fas fa-heart" style="color: #a7c7e7; font-size: 0.9rem;"></i>
+                    <div style="height: 1px; width: 50px; background: #a7c7e7;"></div>
+                </div>
+                
+                <p style="font-style: italic; color: #a7c7e7; font-weight: 500; font-size: 1rem; background: rgba(167, 199, 231, 0.1); padding: 15px; border-radius: 50px;">
+                    <i class="fas fa-ticket-alt" style="margin-right: 8px;"></i>
+                    Если вы хотите сделать нам комплимент, замените букет на лотерейный билет
+                </p>
+                
+                <p style="margin-top: 20px; font-size: 0.9rem; color: #888;">
+                    <i class="fas fa-smile" style="color: #a7c7e7; margin-right: 5px;"></i>
+                    Будем рады каждому из вас!
+                </p>
+            </div>
+        </section>
         
         <!-- RSVP секция -->
-<section style="padding-top: 0; margin: 40px 0; text-align: center;">
-    
-    <!-- Заголовок и дата подтверждения -->
-    <h2 style="font-family: 'Cormorant Garamond', serif; font-size: 1.8rem; color: #1a1a1a; margin-bottom: 10px;">
-        Подтверждение участия
-    </h2>
-    
-    <p style="font-size: 1rem; color: #666; margin-bottom: 30px; font-style: italic;">
-        Пожалуйста, сообщите нам о своём решении до 1 июня 2026 года
-    </p>
-    
-    <!-- Декоративная линия с сердечками -->
-    <div class="divider" style="margin-bottom: 25px;">
-        <div style="height: 1px; width: 60px; background: #a7c7e7;"></div>
-        <i class="fas fa-heart" style="color: #a7c7e7; font-size: 1rem;"></i>
-        <div style="height: 1px; width: 60px; background: #a7c7e7;"></div>
-    </div>
-    
-    <!-- Кнопка подтверждения -->
-    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfkj-UEcBWCw_zTgg5KW7iAFsAIacFLLG14Iy7bdxJNgz4QKA/viewform?usp=dialog" 
-       target="_blank" 
-       style="display: inline-block;
-              background: linear-gradient(135deg, #a7c7e7, #b0d0e3);
-              color: #1a1a1a;
-              text-decoration: none;
-              padding: 18px 45px;
-              border-radius: 50px;
-              font-weight: 600;
-              letter-spacing: 2px;
-              text-transform: uppercase;
-              font-size: 1.1rem;
-              border: none;
-              cursor: pointer;
-              transition: transform 0.3s, box-shadow 0.3s;
-              margin: 10px 0;
-              box-shadow: 0 4px 15px rgba(167, 199, 231, 0.3);
-              width: fit-content;">
-        <i class="fas fa-envelope" style="margin-right: 10px;"></i>Подтвердить
-    </a>
-    
-    <!-- Неброская надпись под кнопкой -->
-    <p style="font-size: 0.8rem; color: #999; margin-top: 15px; letter-spacing: 0.5px;">
-        <i class="fas fa-external-link-alt" style="margin-right: 5px; color: #a7c7e7; opacity: 0.7;"></i>
-        Вы перейдёте в Google Форму (займёт 1 минуту)
-    </p>
-    
-    <!-- Маленькая декоративная точка -->
-    <div style="margin-top: 20px;">
-        <i class="fas fa-circle" style="color: #a7c7e7; font-size: 0.4rem; opacity: 0.5;"></i>
-    </div>
-</section>
+        <section style="padding-top: 0; margin: 40px 0; text-align: center;">
+            
+            <h2 style="font-family: 'Cormorant Garamond', serif; font-size: 1.8rem; color: #1a1a1a; margin-bottom: 10px;">
+                Подтверждение участия
+            </h2>
+            
+            <p style="font-size: 1rem; color: #666; margin-bottom: 30px; font-style: italic;">
+                Пожалуйста, сообщите нам о своём решении до 1 июня 2026 года
+            </p>
+            
+            <div class="divider" style="margin-bottom: 25px;">
+                <div style="height: 1px; width: 60px; background: #a7c7e7;"></div>
+                <i class="fas fa-heart" style="color: #a7c7e7; font-size: 1rem;"></i>
+                <div style="height: 1px; width: 60px; background: #a7c7e7;"></div>
+            </div>
+            
+            <!-- Кнопка подтверждения (исправлена ссылка) -->
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfkj-UEcBWCw_zTgg5KW7iAFsAIacFLLG14Iy7bdxJNgz4QKA/viewform?usp=dialog" 
+               target="_blank" 
+               style="display: inline-block;
+                      background: linear-gradient(135deg, #a7c7e7, #b0d0e3);
+                      color: #1a1a1a;
+                      text-decoration: none;
+                      padding: 18px 45px;
+                      border-radius: 50px;
+                      font-weight: 600;
+                      letter-spacing: 2px;
+                      text-transform: uppercase;
+                      font-size: 1.1rem;
+                      border: none;
+                      cursor: pointer;
+                      transition: transform 0.3s, box-shadow 0.3s;
+                      margin: 10px 0;
+                      box-shadow: 0 4px 15px rgba(167, 199, 231, 0.3);
+                      width: fit-content;">
+                <i class="fas fa-envelope" style="margin-right: 10px;"></i>Подтвердить
+            </a>
+            
+            <p style="font-size: 0.8rem; color: #999; margin-top: 15px; letter-spacing: 0.5px;">
+                <i class="fas fa-external-link-alt" style="margin-right: 5px; color: #a7c7e7; opacity: 0.7;"></i>
+                Вы перейдёте в Google Форму (займёт 1 минуту)
+            </p>
+            
+            <div style="margin-top: 20px;">
+                <i class="fas fa-circle" style="color: #a7c7e7; font-size: 0.4rem; opacity: 0.5;"></i>
+            </div>
+        </section>
         
         <!-- Footer с сердечками -->
         <div class="footer">
@@ -552,12 +539,5 @@
         </div>
         
     </div>
-    
-    <!-- Таймер не нужен, но если хотите добавить - раскомментируйте -->
-    <!--
-    <script>
-        // Таймер обратного отсчета можно добавить здесь при желании
-    </script>
-    -->
 </body>
 </html>
